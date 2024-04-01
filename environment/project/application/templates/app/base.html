@@ -15,7 +15,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="{% static "app/images/Neel.png" %}" width="70" height="70" />
@@ -89,6 +89,7 @@
     </nav>
 
     {% block banner-slider %}{% endblock banner-slider %}
+    {% block information %}{% endblock information %}
     {% block main-content %}{% endblock main-content %}
 
     <footer class="container-fluid bg-success text-center p-2 mt-5 ">
