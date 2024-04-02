@@ -49,66 +49,97 @@
         
         <div class="container text-center" >
 
-            <div class="row justify-content-start">
-              <div class="col-4">
-                <img src="{% static 'app/images/product/buffalo-ghee.png' %}" class="img-responsive " width=auto height=200>
-                <b>Buffalo Ghee</b>
+            <div class="row justify-content-start"> 
+
+                <div class="col-4">
+                  <a href="{% url 'category' 'GH' %}">
+                    <img src="{% static 'app/images/product/buffalo-ghee.png' %}" class="img-responsive " width=auto height=200>
+                    </a>
+                    <b>Buffalo Ghee</b>
                 </div>
-              <div class="col-4">
-                <img src="{% static 'app/images/product/cow-ghee.png' %}" class="img-responsive " width=auto height=200>
-                <b>Cow Ghee</b>
-            </div>
+                <div class="col-4">
+                  <a href="{% url 'category' 'GH' %}">
+                  <img src="{% static 'app/images/product/cow-ghee.png' %}" class="img-responsive " width=auto height=200>
+                  </a>
+                  <b>Cow Ghee</b>
+                </div>
             </div>
             <br><br>
+
             <div class="row justify-content-center">
+
               <div class="col-4">
+                <a href="{% url 'category' 'ML' %}">
                 <img src="{% static 'app/images/product/cow-milk.png' %}" class="img-responsive" width=auto height=200>
+                </a>
                 <b>Cow Milk</b>
-            </div>
+              </div>
               <div class="col-4">
+                <a href="{% url 'category' 'CR' %}">
                 <img src="{% static 'app/images/product/curd-premium.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Curd Premimu</b>
-            </div>
+              </div>
             </div>
             <br><br>
+
             <div class="row justify-content-end">
+
               <div class="col-4">
+                <a href="{% url 'category' 'CR' %}">
                 <img src="{% static 'app/images/product/curd-total.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Curd Total</b>
-            </div>
+              </div>
               <div class="col-4">
+                <a href="{% url 'category' 'ML' %}">
                 <img src="{% static 'app/images/product/dbtoned-milk.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Dbtoned Milk</b>
-            </div>
+              </div>
             </div>
             <br><br>
+
             <div class="row justify-content-around">
+
               <div class="col-4">
+                <a href="{% url 'category' 'ML' %}">
                 <img src="{% static 'app/images/product/fullcream-milk.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Ful Ice Cream Milk</b>
-            </div>
+              </div>
               <div class="col-4">
+                <a href="{% url 'category' 'IC' %}">
                 <img src="{% static 'app/images/product/icbars.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Ice Bars</b>
-            </div>
+              </div>
             </div>
             <br><br>
+
             <div class="row justify-content-between">
+
               <div class="col-4">
+                <a href="{% url 'category' 'IC' %}">
                 <img src="{% static 'app/images/product/kulfi.png' %}" class="img-responsive " width=auto height=200>
+                </a>
                 <b>Kulfi</b>
-            </div>
+              </div>
               <div class="col-4">
-                <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" class="img-responsive " width=auto height=200>
+                <a href="{% url 'category' 'MS' %}">
+                <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" class="img-responsive " width=auto height=200></a>
                 <b>Milk Shake Chocolate</b>
-            </div>
+              </div>
             </div>
             <br><br>
+
             <div class="row justify-content-evenly">
+
               <div class="col-4">
-                <img src="{% static 'app/images/product/milk-shake-strawberry.png' %}" class="img-responsive " width=auto height=200>
+                <a href="{% url 'category' 'MS' %}">
+                <img src="{% static 'app/images/product/milk-shake-strawberry.png' %}" class="img-responsive " width=auto height=200></a>
                 <b>Milk Shake Straberry</b>
-            </div>
+              </div>
               
             </div>
           </div>
