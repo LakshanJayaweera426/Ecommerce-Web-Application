@@ -1,0 +1,65 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="6000">
+            <img src="{% static "app/images/banner/b1.jpg" %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+            <img src="{% static "app/images/banner/b2.jpg" %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+            <img src="{% static "app/images/banner/b3.jpg" %}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    
+    </div>
+    
+{% endblock banner-slider %}
+
+
+
+{% block main-content %}
+<br>
+<div style="margin:0px 120px;  width:80%; border: 2px solid white; border-radius:20px;">
+    <div class="container mt-3">
+        <h2 class="text-center">About Us</h2> 
+    </div>
+    <br>
+    <div class="row container">
+        <p class="fs-5 text-center " style="font-family:araliya;">
+            The Elephant House, or Ceylon Cold Stores PLC (CCS), is a Sri Lankan giant in the food and beverage industry. They've been around since 1866, starting with ice production and evolving into a household name synonymous with delicious treats. From their market-leading Elephant Ginger Ale to a wide range of ice creams and even some processed meats, they offer something for everyone. Their focus is on providing tasty and nutritious options at reasonable prices, making them a staple in Sri Lankan homes. With a commitment to quality and a rich heritage, Elephant House continues to delight taste buds across the country.
+        </p>
+    </div>
+</div>
+<br>
+<div  style="margin:0px 120px;  width:80%; border: 2px solid white; border-radius:20px;">
+    <div class="container mt-3">
+        <h2 class="text-center">Mission</h2>
+    </div>
+    <br>
+    <div class="row container">
+        <p class="fs-5 text-center " style="font-family:araliya;">
+            Vision and practices reveal a clear purpose. They prioritize bringing pleasure and nourishment to people's lives through exciting and high-quality food and beverages. This translates to offering a diverse range of delicious products, including healthier options that cater to those seeking a more balanced diet. Affordability and variety are key, ensuring their tasty treats are accessible to a broad spectrum of Sri Lankan consumers. In essence, Elephant House aspires to be a constant companion, providing delightful and nutritious options for every step of life's journey.
+        </p>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}
+
+
+
+
+
