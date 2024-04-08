@@ -159,6 +159,10 @@ def payment_done(request):
     return redirect("orders")
 
 
+def orders(request):
+    order_placed=OrderPlaced.objects.filter(user=request.user)
+    return render(request, 'app/orders.html', locals())
+
 def plus_cart(request):
     if request.method =='GET':
         prod_id=request.Get['prod_id']
