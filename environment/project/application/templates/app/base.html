@@ -57,8 +57,8 @@
 
               
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" action="/search">
+              <input class="form-control me-2" type="search" placeholder="Search" name="search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
@@ -68,16 +68,16 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nilesh</a>
               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
                 <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
-                <li><a class="dropdown-item" href="{% rul 'orders' %}">Orders</a></li>
+                <li><a class="dropdown-item" href="{% url 'orders' %}">Orders</a></li>
                 <li><a class="dropdown-item" href="{% url 'passwordchange' %}">Change Password</a></li>
                 <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
               </ul>
             </li>
             <li>
-              <a href="{% url 'showcart' %}" class="nav-link text-white">Cart 4</a>
+              <a href="{% url 'showcart' %}" class="nav-link text-white"><span class="badge bg-danger">{% if totalitem > 0 %}{{totalitem}} {% endif %} </span> Cart</a>
             </li>
             <li>
-              <a href="#" class="nav-link text-white">Wishlist 4</a>
+              <a href="#" class="nav-link text-white"><span class="badge bg-danger">{% if wishitem > 0 %}{{wishitem}}{% endif %}</span> <i class="fa fa-heart"> </i></a>
             </li>
             
             <li>
@@ -99,7 +99,7 @@
       {% block payment-gateway %}{% endblock payment-gateway %}
     </div>
     <footer class="container-fluid bg-success text-center p-2 mt-5 fixed-bottom">
-        Copyright &copy; : 2024 || Developed by : Unify Solutions 
+        Copyright &copy; : 2024 || Developed by : Lakshan Jayaweera 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
